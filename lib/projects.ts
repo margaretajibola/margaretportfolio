@@ -3,45 +3,51 @@ export const webdevProjects = [
   {
     title: "YelpCamp",
     description:
-      "A full-stack web app for users to share and review campgrounds.",
-    tech: ["Node.js", "Express", "MongoDB", "EJS", "JavaScript"],
+      "A full-stack web application for listing, reviewing, and managing campgrounds, with user authentication, photo uploads, and campground reviews.",
+    tech: ["Node.js", "Express", "MongoDB", "Mongoose", "EJS", "Cloudinary"],
     github: "https://github.com/margaretajibola/YelpCamp",
+    website: "https://yelpcamp-jade.vercel.app/",
   },
   {
-    title: "WigsByMagss Booking Website (In Progress)",
+    title: "WigsByMagss Booking Website",
     description:
-      "A modern booking platform for salon services with an admin/user dashboard and scheduling system.",
-    tech: ["React", "Next.js", "Tailwind CSS", "Prisma", "PostgresSQL", "TypeScript", "Playwright"],
+      "A full-stack appointment booking platform for salon services, letting clients browse services and reserve time slots while giving owners an admin dashboard to manage bookings.",
+    tech: ["React", "Next.js", "Tailwind CSS", "Prisma", "PostgreSQL", "TypeScript", "Playwright"],
     github: "https://github.com/margaretajibola/WigsbymagssBookingWebsite",
-  },
-   {
-    title: "Museum of Black Women",
-    description:
-      "A basic HTML + Bootstrap website displaying pictures of Black women, created to highlight representation and diversity through visuals.",
-    tech: ["HTML", "Bootstrap"],
-    github: "https://github.com/margaretajibola/Museum-of-Black-Women",
+    website: "https://wigsbymagss-booking-website.vercel.app/",
   },
   {
     title: "Ping Pong Game",
-    description: "An interactive HTML, Bulma (CSS Framework), and JavaScript website that lets users play a classic pong-style game in the browser.",
+    description:
+      "A browser-based ping-pong (table tennis) game for two players, built as a learning exercise in DOM manipulation.",
     tech: ["HTML", "Bulma", "JavaScript"],
     github: "https://github.com/margaretajibola/Ping-Pong-Game",
-  }
+  },
 ];
 
 export const dataProjects = [
   {
     title: "IBM Data Engineering Capstone",
     description:
-      "A capstone project that demonstrates a comprehensive data engineering pipeline covering the entire data lifecycle from OLTP databases to advanced analytics and machine learning. The project implements modern data engineering practices using industry-standard tools and technologies.",
-    tech: ["Python", "SQL", "Bash",  "PostgreSQL","MySQL", "MongoDB", "Data Warehousing", "Apache Airflow", "Google Looker", "Apache Spark"],
+      "A capstone project implementing a complete data engineering pipeline, moving data from OLTP systems through ETL into a data warehouse, then powering analytics and machine learning.",
+    tech: ["Python", "SQL", "MySQL", "MongoDB", "PostgreSQL", "Apache Airflow", "Apache Spark", "Google Looker Studio"],
     github: "https://github.com/margaretajibola/ibm-data-engineering-capstone",
   },
   {
     title: "IMDB Movies Data Pipeline",
     description:
-      "An end-to-end batch ETL pipeline for IMDB movie data analysis demonstrating complete data engineering workflow from CSV ingestion to interactive dashboards. Implements dimensional modeling (star schema), automated orchestration with Apache Airflow, and analytics visualization with Google Looker.",
-    tech: ["Python", "SQL", "Bash", "PostgreSQL", "Pandas", "Data Warehousing", "Apache Airflow", "Google Looker Studio", "ETL Pipeline"],
+      "An end-to-end batch ETL pipeline that extracts movie data from CSV, transforms it with Pandas, loads it into a PostgreSQL warehouse, and orchestrates and visualizes it with Airflow and Looker, with data quality validation via Great Expectations.",
+    tech: ["Python", "Pandas", "PostgreSQL", "Apache Airflow", "Google Looker Studio", "Great Expectations"],
     github: "https://github.com/margaretajibola/imdb-movies-pipeline",
-  }  
+  },
+];
+
+export const agenticProjects = [
+  {
+    title: "AI Agent Eval Dashboard",
+    description:
+      "A benchmarking and evaluation system for LLM agents from OpenAI, Anthropic, and Ollama, running them against the GAIA benchmark with an automated Python test runner and a Streamlit dashboard to compare performance.",
+    tech: ["Python", "LangGraph", "LangChain", "Streamlit", "GAIA Benchmark"],
+    github: "https://github.com/margaretajibola/ai_agent_eval_dashboard",
+  },
 ];

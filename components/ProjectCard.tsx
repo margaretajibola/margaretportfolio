@@ -4,31 +4,46 @@ type Project = {
   description: string;
   tech: string[];
   github: string;
+  website?: string;
 };
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
-    <div className="border rounded-lg p-5 bg-gray-200 shadow hover:shadow-md transition">
-      <h3 className="text-xl text-black font-semibold mb-2">{project.title}</h3>
-      <p className="text-gray-700 mb-3">{project.description}</p>
-      <div className="flex flex-wrap gap-2 mb-3">
+    <div className="group border border-white/10 rounded-xl p-6 bg-white/5 hover:bg-white/[0.07] hover:-translate-y-1 hover:border-accent/40 transition-all duration-200">
+      <h3 className="text-xl text-foreground font-semibold mb-2">{project.title}</h3>
+      <p className="text-gray-400 mb-4">{project.description}</p>
+      <div className="flex flex-wrap gap-2 mb-4">
         {project.tech.map((t) => (
           <span
             key={t}
-            className="text-sm bg-gray-100 text-gray-800 px-2 py-1 rounded"
+            className="text-xs font-medium bg-accent/15 text-accent px-2.5 py-1 rounded-full"
           >
             {t}
           </span>
         ))}
       </div>
-      <a
-        href={project.github}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-600 hover:underline"
-      >
-        View on GitHub →
-      </a>
+      <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
+        <a
+          href={project.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1 text-accent font-medium group-hover:gap-2 transition-all"
+        >
+          View on GitHub
+          <span aria-hidden="true">→</span>
+        </a>
+        {project.website && (
+          <a
+            href={project.website}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 text-gray-300 hover:text-accent font-medium transition-colors"
+          >
+            Live Site
+            <span aria-hidden="true">↗</span>
+          </a>
+        )}
+      </div>
     </div>
   );
 }

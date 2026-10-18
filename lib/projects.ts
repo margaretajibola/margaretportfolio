@@ -50,4 +50,11 @@ export const agenticProjects = [
     tech: ["Python", "LangGraph", "LangChain", "Streamlit", "GAIA Benchmark"],
     github: "https://github.com/margaretajibola/ai_agent_eval_dashboard",
   },
+  {
+    title: "Nimbus Novelty Socks RAG Agent",
+    description:
+      "A corrective RAG chatbot that answers employee questions about company policies (PTO, expenses, IT security, benefits) by retrieving and grading relevant docs, then rewriting the query to retry when the results fall short.",
+    tech: ["Python", "LangGraph", "LangChain", "Chroma", "OpenAI", "Streamlit"],
+    github: "https://github.com/margaretajibola/nimbus_novelty_socks_rag_agent",
+  },
 ];

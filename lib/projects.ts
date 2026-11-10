@@ -57,4 +57,12 @@ export const agenticProjects = [
     tech: ["Python", "LangGraph", "LangChain", "Chroma", "OpenAI", "Streamlit"],
     github: "https://github.com/margaretajibola/nimbus_novelty_socks_rag_agent",
   },
+  {
+    title: "Football Data Agent",
+    description:
+      "A daily pipeline that loads Premier League data into a cloud Postgres database, paired with an AI analyst agent that answers plain-English questions by querying that data through an MCP server and showing the SQL behind each answer.",
+    tech: ["Python", "LangGraph", "LangChain", "MCP", "PostgreSQL", "Streamlit", "GitHub Actions"],
+    github: "https://github.com/margaretajibola/football-data-agent",
+    website: "https://football-data-agent-lbjscyqsabkyxwpvnds63z.streamlit.app/",
+  },
 ];
